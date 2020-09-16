@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parcial</title>
+</head>
+<body>
+    <h2>Agregar Usuario</h2>
+
+    <form id='agregarMiembro' class='formulario'>
+        <input class='campos' type="text" id='nombre' placeholder="Nombre">
+        <input class='campos' type="number" id='dni' placeholder="DNI">
+        <input class='campos' type="email" id='email' placeholder="Email">
+        <input class='campos' type="date" id='vencimiento' >
+        <input type="submit" value='Agregar'>
+    </form>
+    <div id="mensaje" class='mensaje'></div>
+<br>
+<br>
+<br>
+<br>
+    <h2>Verificar Usuario</h2>
+    <form id='verificarMiembro'>
+        <input type="number" id="documento" placeholder="DNI">
+        <input type="submit" value="Verificar">
+    </form>
+    <div id="mensajeVerificar" class='mensaje'></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Modificar Usuario</h2>
+
+    <form id='modificarMiembro' class='formulario'>
+        <select id="selectMiembros">
+            <option value="">Seleccioná un miembro</option>
+        </select>
+        <input class='campos' type="text" id='modNombre' placeholder="Nombre">
+        <input class='campos' type="number" id='modDni' placeholder="DNI">
+        <input class='campos' type="email" id='modEmail' placeholder="Email">
+        <input class='campos' type="date" id='modVencimiento' >
+        <input type="submit" value='Modificar'>
+    </form>
+    <div id="mensajeModifar" class='mensaje'></div>
+
+<script src='script.js'></script>
+</body>
+</html>
